@@ -84,3 +84,111 @@ Information theory sets the ultimate limit on how much data can be sent reliably
     C = B \log_2(1 + SNR)
 \end{equation}
 Modern modulation and coding (like 1024-QAM with LDPC) operate within 1-2 dB of this theoretical limit.
+
+\subsection{In-Depth Analysis: Modulation}
+The integration of machine learning has opened new frontiers in algorithm design. By treating the entire communication or processing chain as a single end-to-end differentiable autoencoder, deep neural networks can learn optimal representations and coding schemes that outperform traditional human-engineered blocks under non-standard channel conditions.
+
+Mathematical modeling of these systems requires an understanding of their asymptotic behavior. By analyzing the limit as the number of samples approaches infinity, we can derive the Cramér-Rao lower bound, which provides the minimum variance for any unbiased estimator. This bound is essential for determining the theoretical efficiency of our algorithms.
+
+\begin{equation}
+    \mathbf{R}_{xx} = \mathbb{E}[\mathbf{x}[n]\mathbf{x}^T[n]] = \frac{1}{N} \sum_{k=1}^{N} \mathbf{x}_k \mathbf{x}_k^T
+\end{equation}
+
+A key component of modern design is the optimization of the objective function. Using stochastic gradient descent or its variants, we can iteratively update the system parameters. The learning rate must be carefully tuned to ensure convergence while avoiding local minima, a phenomenon frequently encountered in highly non-linear parameter spaces.
+
+\begin{pythonbox}{Simulation: Modulation}
+\texttt{import numpy as np}
+\texttt{import matplotlib.pyplot as plt}
+\texttt{}
+\texttt{\# Initialize parameters for modulation}
+\texttt{N = 1024}
+\texttt{data = np.random.randn(N) + 1j * np.random.randn(N)}
+\texttt{signal\_power = np.var(data)}
+\texttt{noise = np.random.normal(0, 0.1, N)}
+\texttt{processed\_signal = data + noise}
+\end{pythonbox}
+
+\vspace{0.5cm}
+The mathematical formulation demonstrates the theoretical limits, while the simulation code provides a framework for empirical verification. These tools are critical for evaluating the efficacy of the proposed methodologies under practical constraints.
+
+
+\subsection{In-Depth Analysis: Constellations}
+The spectral efficiency of the system is fundamentally limited by the available bandwidth and the ambient noise floor. According to the Shannon-Hartley theorem, the channel capacity dictates the maximum error-free data rate. Practical systems utilize advanced coding schemes to operate as close to this limit as possible.
+
+In real-world deployments, hardware imperfections such as phase noise, IQ imbalance, and power amplifier non-linearities introduce severe distortions. Digital pre-distortion (DPD) techniques are often employed to digitally compensate for these analog impairments, ensuring the transmitted signal adheres to strict spectral masks.
+
+\begin{equation}
+    H(e^{j\omega}) = \sum_{n=-\infty}^{\infty} h[n] e^{-j\omega n}
+\end{equation}
+
+The transient response of the system provides insight into its stability. By observing the pole-zero plot in the complex plane, we can guarantee bounded-input bounded-output (BIBO) stability. For discrete-time systems, this necessitates that all poles reside strictly within the unit circle.
+
+\begin{pythonbox}{Simulation: Constellations}
+\texttt{import numpy as np}
+\texttt{import matplotlib.pyplot as plt}
+\texttt{}
+\texttt{\# Initialize parameters for constellations}
+\texttt{N = 1024}
+\texttt{data = np.random.randn(N) + 1j * np.random.randn(N)}
+\texttt{signal\_power = np.var(data)}
+\texttt{noise = np.random.normal(0, 0.1, N)}
+\texttt{processed\_signal = data + noise}
+\end{pythonbox}
+
+\vspace{0.5cm}
+The mathematical formulation demonstrates the theoretical limits, while the simulation code provides a framework for empirical verification. These tools are critical for evaluating the efficacy of the proposed methodologies under practical constraints.
+
+
+\subsection{In-Depth Analysis: Bit Error Rate}
+Computational complexity is a major constraint in mobile and embedded applications. The advent of Fast Fourier Transform (FFT) algorithms revolutionized the field by reducing the complexity of discrete convolution from $O(N^2)$ to $O(N \log N)$, making real-time processing feasible.
+
+Statistical signal processing techniques rely heavily on the estimation of the auto-covariance matrix. Eigen-decomposition of this matrix allows us to separate the signal subspace from the noise subspace, a technique foundational to high-resolution direction-of-arrival (DOA) estimation algorithms like MUSIC and ESPRIT.
+
+\begin{equation}
+    P_e \leq \sum_{d=d_{free}}^{\infty} a_d Q\left(\sqrt{\frac{2 d R E_b}{N_0}}\right)
+\end{equation}
+
+Error control coding introduces structured redundancy to the data stream. By mapping the message space into a higher-dimensional codeword space, the receiver can exploit the geometric distance between valid codewords to detect and correct transmission errors, significantly lowering the Bit Error Rate (BER).
+
+\begin{pythonbox}{Simulation: Bit Error Rate}
+\texttt{import numpy as np}
+\texttt{import matplotlib.pyplot as plt}
+\texttt{}
+\texttt{\# Initialize parameters for bit\_error\_rate}
+\texttt{N = 1024}
+\texttt{data = np.random.randn(N) + 1j * np.random.randn(N)}
+\texttt{signal\_power = np.var(data)}
+\texttt{noise = np.random.normal(0, 0.1, N)}
+\texttt{processed\_signal = data + noise}
+\end{pythonbox}
+
+\vspace{0.5cm}
+The mathematical formulation demonstrates the theoretical limits, while the simulation code provides a framework for empirical verification. These tools are critical for evaluating the efficacy of the proposed methodologies under practical constraints.
+
+
+\subsection{In-Depth Analysis: Signal Space}
+Multi-rate signal processing involves the alteration of the sampling rate within the digital domain. Decimation and interpolation require stringent anti-aliasing and anti-imaging filters, respectively. Polyphase decompositions of these filters allow for highly efficient implementations that operate at the lower sampling rate.
+
+The integration of machine learning has opened new frontiers in algorithm design. By treating the entire communication or processing chain as a single end-to-end differentiable autoencoder, deep neural networks can learn optimal representations and coding schemes that outperform traditional human-engineered blocks under non-standard channel conditions.
+
+\begin{equation}
+    \mathcal{L}(\theta) = -\frac{1}{M} \sum_{i=1}^{M} \left[ y_i \log(\hat{y}_i) + (1-y_i)\log(1-\hat{y}_i) \right]
+\end{equation}
+
+Mathematical modeling of these systems requires an understanding of their asymptotic behavior. By analyzing the limit as the number of samples approaches infinity, we can derive the Cramér-Rao lower bound, which provides the minimum variance for any unbiased estimator. This bound is essential for determining the theoretical efficiency of our algorithms.
+
+\begin{pythonbox}{Simulation: Signal Space}
+\texttt{import numpy as np}
+\texttt{import matplotlib.pyplot as plt}
+\texttt{}
+\texttt{\# Initialize parameters for signal\_space}
+\texttt{N = 1024}
+\texttt{data = np.random.randn(N) + 1j * np.random.randn(N)}
+\texttt{signal\_power = np.var(data)}
+\texttt{noise = np.random.normal(0, 0.1, N)}
+\texttt{processed\_signal = data + noise}
+\end{pythonbox}
+
+\vspace{0.5cm}
+The mathematical formulation demonstrates the theoretical limits, while the simulation code provides a framework for empirical verification. These tools are critical for evaluating the efficacy of the proposed methodologies under practical constraints.
+
