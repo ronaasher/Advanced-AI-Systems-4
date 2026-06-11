@@ -1,0 +1,57 @@
+\hebrewsection{Case Studies and Practical Implementations}
+
+\subsection{Case Study: The GSM Standard}
+GSM (Global System for Mobile Communications) was the first widely adopted digital cellular standard. It uses a combination of TDMA (Time Division Multiple Access) and FDMA (Frequency Division Multiple Access).
+
+\subsubsection{Modulation in GSM: GMSK}
+As discussed in Chapter 3, GSM uses Gaussian Minimum Shift Keying. GMSK provides a constant envelope, which is critical for efficient power amplifier operation in mobile handsets. The Gaussian filter bandwidth-time product ($BT$) is typically set to 0.3.
+
+\subsection{Case Study: Digital Subscriber Line (DSL)}
+DSL technology provides high-speed internet over traditional copper telephone lines. It uses \textbf{Discrete Multi-Tone (DMT)} modulation, which is a form of OFDM.
+
+\subsubsection{Bit Loading}
+DMT adaptively allocates bits to different subcarriers based on the Signal-to-Noise Ratio (SNR) of each subchannel. This allows DSL to maximize the data rate even in the presence of frequency-selective impairments like bridge taps.
+
+\subsection{Case Study: 5G New Radio (NR)}
+5G NR introduces several advanced features to support massive machine-type communications (mMTC) and ultra-reliable low-latency communications (URLLC).
+
+\subsubsection{Massive MIMO and Beamforming}
+5G uses large antenna arrays (up to 256 elements) to perform highly directional beamforming. This increases the signal strength at the intended user while reducing interference for others.
+
+\subsection{Case Study: Evolution of IEEE 802.11 (Wi-Fi)}
+The Wi-Fi standard has evolved from 2 Mbps (802.11b) to multi-Gbps rates (802.11ax/be) by increasing bandwidth, using higher-order modulation (1024-QAM), and employing massive MIMO.
+
+\subsubsection{Wi-Fi 6 (802.11ax)}
+Wi-Fi 6 introduced \textbf{OFDMA} (Orthogonal Frequency Division Multiple Access), allowing the router to serve multiple clients simultaneously within a single symbol interval by allocating subcarrier subsets (Resource Units) to different users.
+
+\subsection{Practical Implementation: FPGA-based Digital Down-Converter (DDC)}
+A DDC is used in modern receivers to shift a high-frequency IF signal to baseband and reduce the sampling rate.
+\begin{enumerate}
+    \item \textbf{Numerical Control Oscillator (NCO):} Generates a complex sinusoid.
+    \item \textbf{Mixer:} Performs the frequency shift.
+    \item \textbf{CIC Filter:} Efficiently performs decimation and initial filtering.
+    \item \textbf{FIR Decimation Filter:} Provides sharp filtering and further decimation.
+\end{enumerate}
+
+\begin{pythonbox}{Simple Digital Down-Conversion}
+\begin{verbatim}
+import numpy as np
+from scipy import signal
+
+# IF Signal at 10 MHz, Sampled at 100 MHz
+fs = 100e6
+t = np.arange(1000) / fs
+x_if = np.cos(2*np.pi*10e6*t)
+
+# NCO at 10 MHz
+nco = np.exp(-1j * 2*np.pi*10e6*t)
+
+# Mixing to Baseband
+x_baseband = x_if * nco
+
+# Low-pass filter and Decimate by 10
+b = signal.firwin(64, 1e6, fs=fs)
+x_lowpass = signal.lfilter(b, 1, x_baseband)
+x_final = x_lowpass[::10]
+\end{verbatim}
+\end{pythonbox}

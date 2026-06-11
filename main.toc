@@ -1,0 +1,161 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Foundations of Digital Signal Processing}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction to Discrete-Time Signals}{6}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Common Signal Sequences}{6}{subsubsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Sampling and Aliasing}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Quantization and Coding}{6}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Linear Time-Invariant (LTI) Systems}{6}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}The Convolution Sum}{6}{subsubsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.5}Stability and Causality}{6}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Difference Equations}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}The Z-Transform}{7}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}Properties of the Z-Transform}{7}{subsubsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.8}Filter Structures}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Group Delay and Phase Analysis}{7}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}The Hilbert Transform}{8}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Multi-rate Signal Processing}{8}{subsection.1.11}%
+\contentsline {subsubsection}{\numberline {1.11.1}Decimation and Aliasing}{8}{subsubsection.1.11.1}%
+\contentsline {subsubsection}{\numberline {1.11.2}Interpolation and Imaging}{8}{subsubsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.12}Sampling of Bandpass Signals}{8}{subsection.1.12}%
+\contentsline {section}{\numberline {2}Advanced Spectral Analysis}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Discrete Fourier Transform (DFT)}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Properties of the DFT}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Fast Fourier Transform (FFT)}{9}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Radix-2 DIT (Decimation-in-Time)}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Radix-4 and Split-Radix Algorithms}{9}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Spectral Estimation: Non-Parametric Methods}{9}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}The Periodogram}{9}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Welch's Method}{9}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Windowing Functions}{9}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Parametric Spectral Estimation}{10}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Autoregressive (AR) Models}{10}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Moving Average (MA) and ARMA Models}{10}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}High-Resolution Subspace Methods}{10}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Time-Frequency Analysis: The STFT}{11}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}The Spectrogram}{11}{subsubsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.9}The Discrete Cosine Transform (DCT)}{11}{subsection.2.9}%
+\contentsline {section}{\numberline {3}Digital Filter Design and Implementation}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Finite Impulse Response (FIR) Filters}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Linear Phase Property}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Window Method Design}{12}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Optimal FIR Design: Parks-McClellan Algorithm}{12}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Infinite Impulse Response (IIR) Filters}{13}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Classic Analog Approximations}{13}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}The Bilinear Transform}{13}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Filter Structures and Finite Word-Length Effects}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Frequency Sampling Method}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Comparison of FIR and IIR Filters}{14}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Digital Communication Systems}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Introduction to Digital Communication}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Signal Space Concepts}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Pulse Shaping and the Nyquist Criterion}{15}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Raised Cosine Filter}{15}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Root Raised Cosine (RRC) Filter}{15}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Modulation Schemes}{15}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}M-ary Phase Shift Keying (M-PSK)}{15}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Quadrature Amplitude Modulation (QAM)}{15}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Continuous Phase Modulation (CPM)}{16}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Gaussian Minimum Shift Keying (GMSK)}{16}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Carrier and Symbol Synchronization}{16}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}The Costas Loop}{16}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}Symbol Timing Recovery}{16}{subsubsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.7}Equalization}{16}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}M-ary Modulation Comparison}{16}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Channel Capacity: The Shannon Limit}{17}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Trellis Coded Modulation (TCM)}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The Motivation for TCM}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ungerboeck's Set Partitioning}{18}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}TCM Encoder Structure}{18}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Distance Properties and Coding Gain}{18}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}The Viterbi Decoder for TCM}{18}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Parallel Transitions}{19}{subsubsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.6}Practical Applications of TCM}{19}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Detection and Demodulation}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Optimal Receiver}{20}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}The Matched Filter}{20}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}Probability of Error Analysis}{20}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}BER for BPSK}{20}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.3}Coherent vs. Non-Coherent Demodulation}{20}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}BER Performance Graphs}{21}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Decision Boundaries}{21}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Maximum Likelihood Sequence Estimation (MLSE)}{21}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Gray Coding}{21}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Advanced Topics in Signal Processing}{22}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Multiple-Input Multiple-Output (MIMO)}{22}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Spatial Multiplexing}{22}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Beamforming}{22}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Orthogonal Frequency Division Multiplexing (OFDM)}{22}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Cyclic Prefix (CP)}{22}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.3}Spread Spectrum Communications}{22}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Direct Sequence Spread Spectrum (DSSS)}{22}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Frequency Hopping Spread Spectrum (FHSS)}{22}{subsubsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.4}Multi-User Detection (MUD)}{22}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}The Ambiguity Function}{23}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Case Studies and Practical Implementations}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Case Study: The GSM Standard}{24}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Modulation in GSM: GMSK}{24}{subsubsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.2}Case Study: Digital Subscriber Line (DSL)}{24}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Bit Loading}{24}{subsubsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.3}Case Study: 5G New Radio (NR)}{24}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Massive MIMO and Beamforming}{24}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Case Study: Evolution of IEEE 802.11 (Wi-Fi)}{24}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Wi-Fi 6 (802.11ax)}{24}{subsubsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.5}Practical Implementation: FPGA-based Digital Down-Converter (DDC)}{25}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Radar Signal Processing}{26}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Basic Radar Principles}{26}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Pulse Compression}{26}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Linear Frequency Modulation (LFM) - Chirp}{26}{subsubsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.3}The Ambiguity Function}{26}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Doppler Processing and MTI}{26}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Information Theory and Source Coding}{27}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Measure of Information: Entropy}{27}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Mutual Information and Channel Capacity}{27}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}The Shannon-Hartley Theorem}{27}{subsubsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.3}Source Coding (Data Compression)}{27}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Huffman Coding}{27}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Lempel-Ziv (LZ77/LZ78) Coding}{28}{subsubsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.4}Differential Entropy and Gaussian Channels}{28}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Rate-Distortion Theory}{28}{subsection.10.5}%
+\contentsline {section}{\numberline {11}Channel Coding and Error Control}{29}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Linear Block Codes}{29}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Hamming Distance and Error Correction}{29}{subsubsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.2}Cyclic Codes and CRC}{29}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Convolutional Codes}{29}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}The Viterbi Algorithm}{29}{subsubsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.4}Modern High-Performance Codes}{29}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Turbo Codes}{29}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Low-Density Parity-Check (LDPC) Codes}{30}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}Soft-Decision Decoding}{30}{subsection.11.5}%
+\contentsline {section}{\numberline {12}Wireless Communication and Fading Channels}{31}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Multipath Propagation and Fading}{31}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Rayleigh Fading}{31}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Ricean Fading}{31}{subsubsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.2}Small-Scale Fading Parameters}{31}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Diversity Techniques}{31}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}MIMO: Multiple-Input Multiple-Output}{31}{subsubsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.4}Channel Estimation and Equalization}{32}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Adaptive Filtering and Signal Processing}{33}{section.13}%
+\contentsline {subsection}{\numberline {13.1}The Wiener Filter}{33}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}The Least Mean Square (LMS) Algorithm}{33}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}The Recursive Least Squares (RLS) Algorithm}{33}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Applications of Adaptive Filters}{33}{subsection.13.4}%
+\contentsline {subsubsection}{\numberline {13.4.1}Adaptive Equalization}{33}{subsubsection.13.4.1}%
+\contentsline {subsubsection}{\numberline {13.4.2}Acoustic Echo Cancellation (AEC)}{33}{subsubsection.13.4.2}%
+\contentsline {subsubsection}{\numberline {13.4.3}Active Noise Control}{34}{subsubsection.13.4.3}%
+\contentsline {subsection}{\numberline {13.5}Kalman Filtering}{34}{subsection.13.5}%
+\contentsline {section}{\numberline {14}Modern Communication Standards and Future Trends}{35}{section.14}%
+\contentsline {subsection}{\numberline {14.1}5G New Radio (NR)}{35}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Wi-Fi 7 (IEEE 802.11be)}{35}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Internet of Things (IoT) Connectivity}{35}{subsection.14.3}%
+\contentsline {subsubsection}{\numberline {14.3.1}LoRa (Long Range)}{35}{subsubsection.14.3.1}%
+\contentsline {subsubsection}{\numberline {14.3.2}NB-IoT (Narrowband IoT)}{35}{subsubsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.4}Satellite Communications: Starlink and Beyond}{35}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}The Path to 6G}{36}{subsection.14.5}%
+\contentsline {section}{\numberline {A}Mathematical Appendices}{37}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Fourier Transform Properties}{37}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Probability Distributions in Communication}{37}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Gaussian (Normal) Distribution}{37}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Rayleigh Distribution}{37}{subsubsection.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}Rician Distribution}{37}{subsubsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.3}Common Identities and Sums}{37}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Derivation of the Matched Filter SNR}{37}{subsection.A.4}%

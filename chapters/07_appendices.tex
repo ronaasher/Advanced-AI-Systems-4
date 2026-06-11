@@ -1,0 +1,36 @@
+\appendix
+\hebrewsection{Mathematical Appendices}
+
+\subsection{Fourier Transform Properties}
+\begin{fancytable}{l c r}
+Property & Time Domain $x(t)$ & Frequency Domain $X(f)$ \\
+Duality & $X(t)$ & $x(-f)$ \\
+Scaling & $x(at)$ & $\frac{1}{|a|} X(f/a)$ \\
+Differentiation & $\frac{d^n}{dt^n}x(t)$ & $(j2\pi f)^n X(f)$ \\
+Integration & $\int_{-\infty}^{t} x(\tau) d\tau$ & $\frac{1}{j2\pi f}X(f) + \dots$ \\
+\end{fancytable}
+
+\subsection{Probability Distributions in Communication}
+\subsubsection{Gaussian (Normal) Distribution}
+Describes the noise in AWGN channels:
+\begin{equation}
+    p(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\end{equation}
+
+\subsubsection{Rayleigh Distribution}
+Describes the envelope of a received signal in a non-line-of-sight (NLOS) fading environment.
+
+\subsubsection{Rician Distribution}
+Describes the envelope when there is a strong line-of-sight (LOS) component in addition to multipath fading.
+
+\subsection{Common Identities and Sums}
+1. \textbf{Geometric Series:} $\sum_{n=0}^{N-1} a^n = \frac{1-a^N}{1-a}$.
+2. \textbf{Euler's Formula:} $e^{j\theta} = \cos\theta + j\sin\theta$.
+3. \textbf{Parseval's Theorem:} Total energy in time domain equals total energy in frequency domain.
+
+\subsection{Derivation of the Matched Filter SNR}
+The Matched Filter $H(f)$ maximizes the peak instantaneous SNR:
+\begin{equation}
+    \eta = \frac{|y(T)|^2}{E[n^2(t)]}
+\end{equation}
+By applying the Schwarz Inequality to the output signal $y(T) = \int S(f)H(f)e^{j2\pi fT} df$, we find that the maximum occurs when $H(f) = k S^*(f) e^{-j2\pi fT}$, which in the time domain is $h(t) = k s^*(T-t)$.

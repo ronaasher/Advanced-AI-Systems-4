@@ -1,0 +1,44 @@
+\hebrewsection{Modern Communication Standards and Future Trends}
+
+This chapter reviews the implementation of high-performance DSP and communication theories in contemporary and upcoming standards.
+
+\subsection{5G New Radio (NR)}
+5G NR is designed for high throughput (eMBB), low latency (URLLC), and massive connectivity (mMTC).
+\begin{itemize}
+    \item \textbf{Scalable OFDM:} Flexible subcarrier spacing to handle different frequency bands (from sub-6GHz to mmWave).
+    \item \textbf{Massive MIMO:} Hundreds of antennas performing 3D beamforming to serve multiple users in the same frequency-time resource (MU-MIMO).
+    \item \textbf{Advanced Coding:} LDPC for data channels and Polar codes for control channels.
+\end{itemize}
+
+\subsection{Wi-Fi 7 (IEEE 802.11be)}
+Wi-Fi 7 is the upcoming standard for "Extremely High Throughput" (EHT).
+\begin{itemize}
+    \item \textbf{320 MHz Bandwidth:} Doubling the channel size from Wi-Fi 6.
+    \item \textbf{4096-QAM (4K-QAM):} Increasing the number of bits per symbol to 12.
+    \item \textbf{Multi-Link Operation (MLO):} Allowing a device to transmit and receive across multiple bands (2.4, 5, and 6 GHz) simultaneously.
+\end{itemize}
+
+\subsection{Internet of Things (IoT) Connectivity}
+\subsubsection{LoRa (Long Range)}
+LoRa uses \textbf{Chirp Spread Spectrum (CSS)} modulation to achieve extremely long ranges (up to 15km) with very low power consumption, albeit at low data rates. It is ideal for battery-powered sensors.
+
+\subsubsection{NB-IoT (Narrowband IoT)}
+NB-IoT is a cellular-based standard that uses a single 180 kHz PRB (Physical Resource Block) of the LTE/5G spectrum. It provides deep indoor coverage and supports massive numbers of low-throughput devices.
+
+\subsection{Satellite Communications: Starlink and Beyond}
+Modern LEO (Low Earth Orbit) satellite constellations use advanced phased arrays and beamforming to provide high-speed internet globally. They employ high-order modulation and sophisticated interference mitigation to reuse spectrum across large geographic areas.
+
+\subsection{The Path to 6G}
+While 5G is still being deployed, research into 6G has begun. Expected features include:
+\begin{itemize}
+    \item \textbf{Terahertz (THz) Communication:} Massive bandwidth at 100 GHz - 3 THz.
+    \item \textbf{Joint Communications and Sensing (JCAS):} Using the network as a high-resolution radar.
+    \item \textbf{AI-Native Air Interface:} Using deep learning to optimize the entire physical layer, replacing traditional DSP algorithms.
+\end{itemize}
+
+\begin{fancytable}{l c c c}
+Feature & 4G (LTE) & 5G NR & 6G (Goal) \\
+Peak Rate & 1 Gbps & 20 Gbps & 1 Tbps \\
+Latency & 10-50 ms & 1 ms & 0.1 ms \\
+Mobility & 350 km/h & 500 km/h & 1000 km/h \\
+\end{fancytable}

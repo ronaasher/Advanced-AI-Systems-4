@@ -1,0 +1,42 @@
+\hebrewsection{Machine Learning in Signal Processing}
+
+The integration of Machine Learning (ML) and Deep Learning (DL) with traditional DSP is creating a new paradigm for "learned" signal processing.
+
+\subsection{Learned Physical Layers}
+Instead of hand-designing modulators and demodulators, we can use an \textbf{Autoencoder} to learn the optimal end-to-end communication system. The encoder acts as the transmitter and the decoder as the receiver, optimized over a differentiable channel model.
+
+\subsection{Signal Classification with CNNs}
+Convolutional Neural Networks (CNNs) are highly effective at classifying signals represented in the time-frequency domain (spectrograms).
+\textit{Applications:}
+\begin{itemize}
+    \item \textbf{Modulation Recognition:} Identifying the modulation type of an intercepted signal.
+    \item \textbf{Signal Denoising:} Removing non-stationary noise that traditional filters cannot handle.
+\end{itemize}
+
+\subsection{Deep Learning for Beamforming}
+In massive MIMO systems, calculating the optimal beamforming weights is computationally expensive. Deep Neural Networks (DNNs) can be trained to approximate these calculations in real-time, significantly reducing latency.
+
+\subsection{Generative Models for Channel Modeling}
+Generative Adversarial Networks (GANs) can be trained to produce realistic synthetic channel responses that match the statistics of specific environments (e.g., a factory floor or a moving train), improving the robustness of system simulations.
+
+\subsection{Challenges and Future Directions}
+\begin{itemize}
+    \item \textbf{Interpretability:} Deep models are often "black boxes" compared to mathematically rigorous DSP.
+    \item \textbf{Complexity:} Running large neural networks on embedded DSPs or FPGAs requires specialized hardware acceleration.
+    \item \textbf{Data Requirements:} Training requires massive amounts of labeled signal data.
+\end{itemize}
+
+\begin{pythonbox}{Simple CNN for Signal Classification}
+\begin{verbatim}
+import tensorflow as tf
+from tensorflow.keras import layers
+
+model = tf.keras.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 1)),
+    layers.MaxPooling2D((2, 2)),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+\end{verbatim}
+\end{pythonbox}

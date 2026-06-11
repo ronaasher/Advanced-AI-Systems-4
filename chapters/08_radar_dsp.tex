@@ -1,0 +1,40 @@
+\hebrewsection{Radar Signal Processing}
+
+Digital Signal Processing is fundamental to modern radar systems. This chapter explores the principles of pulse compression, Doppler processing, and the ambiguity function.
+
+\subsection{Basic Radar Principles}
+A radar system transmits a signal $s(t)$ and listens for echoes. The time delay $\Delta t$ between transmission and reception determines the range $R$:
+\begin{equation}
+    R = \frac{c \Delta t}{2}
+\end{equation}
+where $c$ is the speed of light.
+
+\subsection{Pulse Compression}
+To achieve high range resolution without sacrificing transmit energy, radar systems use long, modulated pulses rather than short, high-power pulses.
+
+\subsubsection{Linear Frequency Modulation (LFM) - Chirp}
+The LFM signal, or chirp, increases its frequency linearly over the pulse duration $T$:
+\begin{equation}
+    s(t) = e^{j\pi K t^2}, \quad -T/2 \leq t \leq T/2
+\end{equation}
+where $K$ is the chirp rate. At the receiver, a matched filter (pulse compressor) collapses the pulse to a width of approximately $1/B$, where $B=KT$ is the bandwidth.
+
+\subsection{The Ambiguity Function}
+The ambiguity function $|\chi(\tau, f_d)|$ represents the output of the matched filter when the received signal has a delay $\tau$ and a Doppler shift $f_d$. It defines the resolution and clutter rejection capabilities of a specific waveform.
+
+\subsection{Doppler Processing and MTI}
+Moving Target Indication (MTI) uses the Doppler shift $f_d = \frac{2v}{\lambda}$ to distinguish moving targets from stationary ground clutter. Modern systems use \textbf{Pulse Doppler Radar} with FFT-based processing to resolve targets in both range and velocity.
+
+\begin{pythonbox}{LFM Chirp Generation}
+\begin{verbatim}
+import numpy as np
+import matplotlib.pyplot as plt
+
+T = 10e-6    # 10 microseconds
+B = 5e6      # 5 MHz
+fs = 50e6    # 50 MHz
+t = np.arange(-T/2, T/2, 1/fs)
+K = B/T
+chirp = np.exp(1j * np.pi * K * t**2)
+\end{verbatim}
+\end{pythonbox}

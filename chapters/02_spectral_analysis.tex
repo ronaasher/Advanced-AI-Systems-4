@@ -1,0 +1,87 @@
+\hebrewsection{Advanced Spectral Analysis}
+
+\subsection{The Discrete Fourier Transform (DFT)}
+The DFT $X[k]$ is a sampled version of the Discrete-Time Fourier Transform (DTFT). It represents the signal in the discrete-frequency domain.
+\begin{equation}
+    X[k] = \sum_{n=0}^{N-1} x[n] e^{-j\frac{2\pi}{N}nk}
+\end{equation}
+
+\subsection{Properties of the DFT}
+1. \textbf{Linearity:} $DFT\{ax + by\} = aX + bY$.
+2. \textbf{Periodicity:} $X[k+N] = X[k]$.
+3. \textbf{Circular Shift:} $x[(n-m) \pmod N] \leftrightarrow X[k]e^{-j\frac{2\pi}{N}mk}$.
+4. \textbf{Symmetry:} For real signals, $X[k] = X^*[N-k]$.
+5. \textbf{Parseval's Relation:} $\sum |x[n]|^2 = \frac{1}{N} \sum |X[k]|^2$.
+
+\subsection{The Fast Fourier Transform (FFT)}
+The FFT reduces complexity from $O(N^2)$ to $O(N \log N)$. 
+
+\subsubsection{Radix-2 DIT (Decimation-in-Time)}
+The most common algorithm, it recursively breaks an $N$-point DFT into two $N/2$-point DFTs using the "butterfly" structure.
+\begin{equation}
+    X[k] = G[k] + W_N^k H[k]
+\end{equation}
+
+\subsubsection{Radix-4 and Split-Radix Algorithms}
+For $N$ being a power of 4, Radix-4 algorithms further reduce the number of multiplications. Split-radix combines the best of both worlds, offering even higher efficiency for specific $N$.
+
+\subsection{Spectral Estimation: Non-Parametric Methods}
+\subsubsection{The Periodogram}
+The periodogram is a basic estimate of the Power Spectral Density (PSD). However, it is an \textbf{inconsistent estimator} because its variance does not decrease as $N \to \infty$.
+
+\subsubsection{Welch's Method}
+Welch's method improves the periodogram by:
+1. Dividing the signal into overlapping segments.
+2. Windowing each segment.
+3. Averaging the periodograms of the segments.
+This reduces variance at the expense of frequency resolution.
+
+\subsection{Windowing Functions}
+Windows are used to mitigate \textbf{spectral leakage} caused by the finite observation interval (rectangular windowing).
+\begin{fancytable}{l c c}
+Window & Sidelobe Level (dB) & Main-lobe Width (bins) \\
+Rectangular & -13 & 2 \\
+Hamming & -43 & 4 \\
+Blackman & -58 & 6 \\
+Kaiser ($\beta=6$) & -50 & 5 \\
+\end{fancytable}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    title={Spectral Leakage: Rectangular vs. Hamming},
+    xlabel={Frequency (Hz)},
+    ylabel={Magnitude (dB)},
+    grid=both,
+    ymin=-60, ymax=0,
+    width=0.8\textwidth,
+    height=7cm
+]
+\addplot[blue, domain=-2:2, samples=100] {20*log10(abs(sin(deg(x*pi*5))/(5*sin(deg(x*pi)))))};
+\addplot[red, thick, domain=-2:2, samples=100] {20*log10(abs(0.54*sin(deg(x*pi*5))/(5*sin(deg(x*pi))) + 0.23*sin(deg((x-0.2)*pi*5))/(5*sin(deg((x-0.2)*pi))) + 0.23*sin(deg((x+0.2)*pi*5))/(5*sin(deg((x+0.2)*pi)))))};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Parametric Spectral Estimation}
+Parametric methods assume a model for the signal generation process.
+\subsubsection{Autoregressive (AR) Models}
+The signal is modeled as the output of an all-pole filter driven by white noise. The parameters are estimated using the \textbf{Yule-Walker equations} or the \textbf{Burg method}. AR models are excellent for resolving closely spaced peaks (spectral lines) in short data records.
+
+\subsubsection{Moving Average (MA) and ARMA Models}
+MA models are all-zero, while ARMA models have both poles and zeros. They are used for signals with broader spectral features.
+
+\subsection{High-Resolution Subspace Methods}
+\textbf{MUSIC} (Multiple Signal Classification) and \textbf{ESPRIT} exploit the eigen-structure of the autocorrelation matrix. They provide resolution far beyond the traditional DFT limit by separating the signal and noise subspaces.
+
+\subsection{Time-Frequency Analysis: The STFT}
+For non-stationary signals, the \textbf{Short-Time Fourier Transform (STFT)} provides a local frequency representation by sliding a window over the signal.
+\begin{equation}
+    STFT\{x[n]\}(m, \omega) = \sum_{n=-\infty}^{\infty} x[n]w[n-m]e^{-j\omega n}
+\end{equation}
+
+\subsubsection{The Spectrogram}
+The Spectrogram is the squared magnitude of the STFT. It is a tool for visualizing non-stationary signals like speech and bird songs. The \textbf{Uncertainty Principle} dictates the trade-off between time and frequency resolution.
+
+\subsection{The Discrete Cosine Transform (DCT)}
+The DCT uses only cosine basis functions. It has exceptional \textbf{energy compaction} properties, making it the standard for lossy compression (JPEG, MP3).

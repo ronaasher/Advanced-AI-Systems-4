@@ -1,0 +1,55 @@
+\hebrewsection{Adaptive Filtering and Signal Processing}
+
+Adaptive filters are filters whose coefficients adjust themselves to minimize a cost function, typically the Mean Squared Error (MSE). They are essential for non-stationary environments.
+
+\subsection{The Wiener Filter}
+The Wiener filter is the optimal linear filter for estimating a target signal $d[n]$ from an observed signal $x[n]$ in the sense of minimizing the MSE. The optimal coefficients $\mathbf{w}_{opt}$ are given by the \textbf{Wiener-Hopf equations}:
+\begin{equation}
+    \mathbf{R}_x \mathbf{w}_{opt} = \mathbf{p}
+\end{equation}
+where $\mathbf{R}_x$ is the autocorrelation matrix of the input and $\mathbf{p}$ is the cross-correlation vector.
+
+\subsection{The Least Mean Square (LMS) Algorithm}
+The LMS algorithm is a stochastic gradient descent method that iteratively updates the filter weights without requiring explicit calculation of $\mathbf{R}_x$.
+\textit{Weight Update Equation:}
+\begin{equation}
+    \mathbf{w}[n+1] = \mathbf{w}[n] + \mu e[n] \mathbf{x}[n]
+\end{equation}
+where $e[n] = d[n] - \mathbf{w}^H[n]\mathbf{x}[n]$ is the error signal and $\mu$ is the step size. LMS is widely used due to its computational simplicity $O(N)$.
+
+\subsection{The Recursive Least Squares (RLS) Algorithm}
+The RLS algorithm minimizes a weighted sum of squared errors. It offers much faster convergence than LMS, especially in environments with high eigenvalue spread in $\mathbf{R}_x$, but at the cost of higher complexity $O(N^2)$.
+\begin{equation}
+    J[n] = \sum_{i=0}^{n} \lambda^{n-i} |e[i]|^2
+\end{equation}
+where $\lambda$ is the forgetting factor.
+
+\subsection{Applications of Adaptive Filters}
+\subsubsection{Adaptive Equalization}
+Used in communication receivers to mitigate ISI caused by time-varying channels. The equalizer "learns" the inverse of the channel.
+
+\subsubsection{Acoustic Echo Cancellation (AEC)}
+Used in speakerphones and video conferencing to remove the echo of the far-end speaker's voice from the local microphone signal.
+
+\subsubsection{Active Noise Control}
+Used in noise-canceling headphones to generate "anti-noise" that cancels out ambient environmental sounds.
+
+\begin{pythonbox}{LMS Algorithm Implementation}
+\begin{verbatim}
+import numpy as np
+
+def lms_filter(x, d, N, mu):
+    w = np.zeros(N)
+    y = np.zeros(len(x))
+    e = np.zeros(len(x))
+    for n in range(N, len(x)):
+        x_n = x[n:n-N:-1]
+        y[n] = np.dot(w, x_n)
+        e[n] = d[n] - y[n]
+        w = w + mu * e[n] * x_n
+    return y, e, w
+\end{verbatim}
+\end{pythonbox}
+
+\subsection{Kalman Filtering}
+The Kalman filter is an optimal recursive estimator for the state of a dynamic system. It is a generalization of the Wiener filter to state-space models and is fundamental to radar tracking, navigation (GPS/INS), and control systems.

@@ -1,0 +1,43 @@
+\hebrewsection{Audio and Speech Processing}
+
+Audio and speech signals are one-dimensional signals that carry a wealth of information. This chapter explores the production of speech and the algorithms used for its analysis and synthesis.
+
+\subsection{Digital Audio Foundations}
+High-fidelity audio requires high sampling rates (e.g., 44.1 kHz or 48 kHz) and high quantization depth (16 to 24 bits).
+
+\subsection{Speech Production Model}
+The human speech production system can be modeled as an excitation source (vocal folds or turbulent airflow) driving a time-varying filter (the vocal tract).
+
+\subsubsection{Linear Predictive Coding (LPC)}
+LPC is a powerful method for speech analysis. It assumes the vocal tract is an all-pole filter:
+\begin{equation}
+    s[n] = \sum_{i=1}^{p} a_i s[n-i] + e[n]
+\end{equation}
+By estimating the coefficients $a_i$, we can characterize the resonances (formants) of the vocal tract. LPC is used in low-bitrate speech codecs like those in early cellular systems.
+
+\subsection{Speech Analysis: The Mel-Frequency Cepstrum}
+The human ear perceives frequency non-linearly. The \textbf{Mel Scale} approximates this perception.
+\subsubsection{Mel-Frequency Cepstral Coefficients (MFCCs)}
+MFCCs are the standard features for speech and audio recognition. They are calculated by:
+1. Taking the STFT.
+2. Mapping the power to the Mel scale.
+3. Taking the log of the powers.
+4. Taking the Discrete Cosine Transform of the log powers.
+
+\subsection{Audio Compression (Perceptual Coding)}
+MP3 and AAC use \textbf{psychoacoustic models} to remove sounds that are masked by other louder sounds or are outside the human hearing range.
+\begin{itemize}
+    \item \textbf{Frequency Masking:} A loud tone at 1 kHz masks quieter tones at 1.1 kHz.
+    \item \textbf{Temporal Masking:} A loud sound masks quieter sounds that occur shortly before or after it.
+\end{itemize}
+
+\subsection{Speech Recognition: From HMM to Deep Learning}
+Traditionally, speech recognition used \textbf{Hidden Markov Models (HMMs)} to model the temporal sequence of phonemes. Modern systems use \textbf{Recurrent Neural Networks (RNNs)} and \textbf{Transformers} (like OpenAI's Whisper) to achieve human-level accuracy.
+
+\subsection{Music Information Retrieval (MIR)}
+MIR involves extracting high-level information from music audio, such as:
+\begin{itemize}
+    \item \textbf{Pitch Detection:} Identifying the fundamental frequency.
+    \item \textbf{Beat Tracking:} Identifying the tempo and pulse.
+    \item \textbf{Genre Classification:} Using machine learning on spectral features.
+\end{itemize}

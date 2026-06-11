@@ -1,0 +1,76 @@
+\hebrewsection{Trellis Coded Modulation (TCM)}
+
+Trellis Coded Modulation, pioneered by Gottfried Ungerboeck in 1982, is a joint coding and modulation technique that achieves significant coding gains without increasing bandwidth or decreasing data rate.
+
+\subsection{The Motivation for TCM}
+In traditional systems, error correction coding is separate from modulation. Adding redundancy usually requires expanding the bandwidth or reducing the information rate. TCM avoids this by expanding the signal constellation and using the redundancy to constrain the allowed sequences of symbols.
+
+\subsection{Ungerboeck's Set Partitioning}
+The core of TCM is the principle of "mapping by set partitioning." The constellation is systematically divided into subsets with increasing intra-subset Euclidean distance.
+\begin{itemize}
+    \item Start with the full constellation $A_0$.
+    \item Partition $A_0$ into two subsets $B_0, B_1$ such that the minimum distance $d_{min}$ in $B_i$ is greater than in $A_0$.
+    \item Continue partitioning until the desired subset distance is reached.
+\end{itemize}
+
+\subsection{TCM Encoder Structure}
+A TCM encoder consists of a convolutional encoder followed by a mapper. For every $n$ bits to be transmitted, the encoder might take $n-1$ bits through a rate $1/2$ convolutional code to produce $n$ bits, while the remaining bits are mapped directly (parallel transitions).
+\begin{equation}
+    \mathbf{y} = f(\mathbf{x}, \sigma)
+\end{equation}
+where $\sigma$ is the state of the convolutional encoder.
+
+\subsection{Distance Properties and Coding Gain}
+The performance of TCM is governed by the \textbf{Free Euclidean Distance} $d_{free}$, which is the minimum Euclidean distance between any two distinct valid sequences of signal vectors.
+The asymptotic coding gain $G$ is given by:
+\begin{equation}
+    G = 10 \log_{10} \left( \frac{d_{free, TCM}^2}{d_{min, uncoded}^2} \cdot \frac{E_{avg, uncoded}}{E_{avg, TCM}} \right)
+\end{equation}
+Typical TCM schemes achieve gains of 3 to 6 dB in AWGN channels.
+
+\subsection{The Viterbi Decoder for TCM}
+The receiver uses the Viterbi algorithm to perform Maximum Likelihood Sequence Estimation (MLSE). Unlike standard convolutional codes where branch metrics are Hamming distances, TCM branch metrics are \textbf{Squared Euclidean Distances} between the received signal $r_n$ and the constellation points $s_i$:
+\begin{equation}
+    \lambda_n = |r_n - s_i|^2
+\end{equation}
+
+\subsubsection{Parallel Transitions}
+If the trellis contains parallel transitions (representing uncoded bits), the decoder first finds the "best" point within the subset corresponding to the parallel transition (hard decision on those bits) and uses its distance as the branch metric.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    title={8-PSK Constellation Partitioning},
+    xlabel={I},
+    ylabel={Q},
+    grid=both,
+    xmin=-1.5, xmax=1.5,
+    ymin=-1.5, ymax=1.5,
+    width=0.6\textwidth,
+    height=6cm
+]
+\addplot[only marks, blue, mark=o] coordinates {(1,0) (0.707,0.707) (0,1) (-0.707,0.707) (-1,0) (-0.707,-0.707) (0,-1) (0.707,-0.707)};
+\node at (axis cs: 1.2,0.1) {000};
+\node at (axis cs: 0.8,0.9) {001};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Practical Applications of TCM}
+TCM revolutionized modem technology in the 1980s and 90s, enabling high-speed data transmission over voice-band telephone lines (ITU-T V.32, V.34 standards). It remains a cornerstone of satellite and microwave communications.
+
+\begin{pythonbox}{TCM Branch Metric Calculation}
+\begin{verbatim}
+import numpy as np
+
+def calculate_branch_metrics(received_sample, constellation):
+    # Calculate Squared Euclidean Distance for all points
+    distances = np.abs(received_sample - constellation)**2
+    return distances
+
+# Example for 8-PSK
+received = 0.8 + 0.2j
+psk8 = np.exp(1j * np.linspace(0, 2*np.pi, 8, endpoint=False))
+metrics = calculate_branch_metrics(received, psk8)
+\end{verbatim}
+\end{pythonbox}

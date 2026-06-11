@@ -1,0 +1,47 @@
+\hebrewsection{Digital Image Processing}
+
+Image processing is the application of DSP techniques to two-dimensional signals. This chapter covers the foundations of image representation, filtering, and compression.
+
+\subsection{2D Signals and Systems}
+An image $f(x, y)$ is a 2D signal where $(x, y)$ are spatial coordinates and the amplitude $f$ is the intensity or gray level.
+
+\subsubsection{2D Sampling and Quantization}
+Images are sampled on a 2D grid. The resolution depends on the sampling density. Quantization (typically 8-bit for grayscale) determines the number of intensity levels.
+
+\subsection{Image Enhancement in the Spatial Domain}
+Spatial domain techniques operate directly on the pixels.
+\begin{itemize}
+    \item \textbf{Point Processing:} Gamma correction, histogram equalization.
+    \item \textbf{Spatial Filtering:} Convolution with kernels for smoothing (Gaussian) or sharpening (Laplacian).
+\end{itemize}
+
+\subsection{Filtering in the Frequency Domain}
+The 2D DFT allows for filtering in the frequency domain.
+\begin{equation}
+    F(u, v) = \sum_{x=0}^{M-1} \sum_{y=0}^{N-1} f(x, y) e^{-j2\pi(\frac{ux}{M} + \frac{vy}{N})}
+\end{equation}
+Low-pass filters blur the image, while high-pass filters enhance edges.
+
+\subsection{Image Compression}
+Compression reduces the amount of data required to represent an image.
+\begin{enumerate}
+    \item \textbf{Lossless (e.g., PNG):} Uses Huffman or LZ coding.
+    \item \textbf{Lossy (e.g., JPEG):} Uses the Discrete Cosine Transform (DCT) to remove high-frequency information that is less visible to the human eye.
+\end{enumerate}
+
+\subsubsection{The JPEG Standard}
+JPEG works by:
+1. Dividing the image into 8x8 blocks.
+2. Applying DCT to each block.
+3. Quantizing the coefficients using a psychovisual matrix.
+4. Huffman coding the result.
+
+\subsection{Edge Detection}
+Edges are significant local changes in intensity.
+\begin{itemize}
+    \item \textbf{Sobel Operator:} Approximates the gradient using $3 \times 3$ kernels.
+    \item \textbf{Canny Edge Detector:} A multi-stage algorithm that includes noise reduction, gradient calculation, non-maximum suppression, and hysteresis thresholding.
+\end{itemize}
+
+\subsection{Wavelet Transforms}
+Unlike the Fourier transform, wavelets provide both time (space) and frequency localization. The \textbf{Discrete Wavelet Transform (DWT)} is the basis for JPEG 2000, offering superior compression at low bitrates without the "blocking" artifacts of standard JPEG.

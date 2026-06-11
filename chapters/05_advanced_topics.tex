@@ -1,0 +1,50 @@
+\hebrewsection{Advanced Topics in Signal Processing}
+
+\subsection{Multiple-Input Multiple-Output (MIMO)}
+MIMO systems use multiple antennas at both the transmitter and receiver to improve spectral efficiency or reliability.
+
+\subsubsection{Spatial Multiplexing}
+Spatial multiplexing increases the data rate by transmitting independent data streams over different spatial channels. The capacity of a MIMO system with $N_t$ transmit and $N_r$ receive antennas grows linearly with $\min(N_t, N_r)$.
+
+\subsubsection{Beamforming}
+Beamforming uses constructive and destructive interference to focus the transmitted energy in a specific direction, increasing the SNR at the receiver and reducing interference for other users.
+
+\subsection{Orthogonal Frequency Division Multiplexing (OFDM)}
+OFDM is the backbone of modern high-speed communication (4G, 5G, Wi-Fi). It divides a high-rate data stream into many low-rate streams transmitted on orthogonal subcarriers.
+
+\subsubsection{Cyclic Prefix (CP)}
+The CP is a copy of the end of an OFDM symbol prepended to the beginning. It converts linear convolution with the channel into circular convolution, simplifying frequency-domain equalization and eliminates ISI.
+
+\subsection{Spread Spectrum Communications}
+Spread spectrum techniques distribute the signal energy over a wide bandwidth.
+
+\subsubsection{Direct Sequence Spread Spectrum (DSSS)}
+In DSSS, each bit is multiplied by a high-rate \textbf{pseudo-noise (PN) sequence}. This spreads the signal's bandwidth and provides resistance to narrow-band interference and jamming.
+
+\subsubsection{Frequency Hopping Spread Spectrum (FHSS)}
+FHSS changes the carrier frequency rapidly according to a pre-defined sequence.
+
+\subsection{Multi-User Detection (MUD)}
+In multi-user systems like CDMA, the receiver can improve performance by jointly detecting all users' signals, effectively cancelling the interference they cause to each other.
+
+\begin{pythonbox}{Simple OFDM Symbol Generation}
+\begin{verbatim}
+import numpy as np
+
+def generate_ofdm_symbol(data_symbols, n_fft, cp_len):
+    # IFFT
+    time_domain = np.fft.ifft(data_symbols, n_fft)
+    # Add Cyclic Prefix
+    ofdm_symbol = np.concatenate([time_domain[-cp_len:], time_domain])
+    return ofdm_symbol
+
+# Example
+n_fft = 64
+cp_len = 16
+data = np.random.choice([1+1j, 1-1j, -1+1j, -1-1j], n_fft)
+symbol = generate_ofdm_symbol(data, n_fft, cp_len)
+\end{verbatim}
+\end{pythonbox}
+
+\subsection{The Ambiguity Function}
+The ambiguity function $|\chi(\tau, f_d)|$ represents the output of the matched filter in a radar system when the received signal has a delay $\tau$ and a Doppler shift $f_d$. It is a critical tool for waveform design in radar engineering.
