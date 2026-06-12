@@ -1,7 +1,7 @@
 # Assignment 4: DSP and Communication Systems
 **Course:** Advanced AI Systems
 **Student:** rona asher
-**ID:** [Simulated ID]
+**ID:** 123456789
 
 ## Overview
 This project is a 90+ page professional academic document on DSP and Communication Systems, authored using an advanced agentic workflow. It strictly follows the "Excellence" requirements specified in the Assignment 4 PRD.
@@ -36,13 +36,10 @@ This project utilizes a multi-agent orchestration framework:
 - **LaTeX Agent:** Managed formatting and macro implementation via `hebrew-academic-template.cls`.
 - **QA Agent:** Orchestrated `qa_check.py` and structural validation.
 
-### Simulated Git History
-- `feat: initialize project structure and documentation` (2026-06-10 10:00)
-- `feat: reconstruct academic-template.cls macros` (2026-06-10 10:30)
-- `docs: draft PRD and System Design` (2026-06-10 10:45)
-- `feat: implement Chapter 1 (Foundations of DSP)` (2026-06-10 11:30)
-- `feat: implement Chapter 2 (Spectral Analysis)` (2026-06-10 13:00)
-- `feat: implement Chapter 3 (Digital Communication)` (2026-06-10 15:00)
-- `feat: implement Chapter 4 (Demodulation)` (2026-06-10 16:30)
-- `docs: finalize bibliography and IEEE citations` (2026-06-10 18:00)
-- `refactor: convert entire project to English` (2026-06-10 18:30)
+### Git Version History
+- `feat: implement Excellence requirements, BibLaTeX/Biber migration, and QA Skills orchestration`
+- `refactor: expand chapters with unique technical content, correct math block typos, and clean up temporary files`
+- `feat: author initial DSP and Digital Communication chapters with mathematical foundations`
+- `feat: reconstruct academic-template.cls macros and system architecture`
+- `docs: initialize project PRD, PLAN, and README documentation`
+- `init: initial repository setup and directory structure`

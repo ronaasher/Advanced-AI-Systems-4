@@ -1,22 +1,18 @@
-# Product Requirements Document (PRD) - Assignment 4
+# Product Requirements Document (PRD) - Advanced DSP/Comm Project
 
-## 1. Goal
-Generate a professional, high-quality academic document in PDF format using LaTeX, specifically targeting DSP and Communication topics.
+## 1. Project Objective
+The primary goal of this project is to develop a high-fidelity, peer-reviewed caliber academic document covering the intersections of Digital Signal Processing and Modern Communication Standards.
 
-## 2. Detailed Requirements
-- **Length:** Minimum 50 pages (English) or 30 (Mixed). Target: PhD-level depth.
-- **Language:** Perfect BiDi support (English/Hebrew mix).
-- **Architecture:** 
-    - `main.tex` master file.
-    - Modular chapters in `chapters/`.
-    - Custom `.cls` with professional Banner + Footer.
+## 2. Technical Specifications
+- **Target Length:** 50-100 pages of dense technical content.
+- **Language & BiDi:** Full support for multilingual typesetting (English primary, Hebrew secondary) with zero alignment errors.
+- **Compiler:** Exclusive use of **LuaLaTeX** for advanced font management and memory handling.
 - **Components:**
-    - Table of Contents, List of Figures, List of Tables.
-    - Bibliographic references (IEEE style).
-- **Quality Assurance:** Demonstration of QA Skills (automation).
+    - Integrated mathematical proofs and complex system modeling.
+    - Automated bibliography via **BibLaTeX/Biber**.
+    - High-resolution **TikZ** diagrams for system architectures.
 
-## 3. Excellence Criteria (Rating: Excellence)
-- **Visuals:** Inclusion of TikZ graphs and professional formatting.
-- **Stability:** 100% warning-free compilation (0 hbox/vbox errors).
-- **Reproduction:** Full reproducibility with iterative Git history.
-- **Orchestration:** Advanced AI agent orchestration of complex tasks.
+## 3. Quality Control Standards
+- **Validation:** Automated QA scanning for structural integrity (`qa-infra`) and typesetting consistency (`qa-typeset`).
+- **Reproducibility:** 100% build stability across standard MiKTeX/TeX Live environments.
+- **Attribution:** Professional Git history tracking all technical iterations.

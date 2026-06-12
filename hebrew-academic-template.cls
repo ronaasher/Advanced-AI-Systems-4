@@ -7,6 +7,7 @@
 \RequirePackage[english]{babel}
 \RequirePackage{fontspec}
 \setmainfont{Times New Roman}
+\RequirePackage{microtype}
 
 % --- Layout & Graphics ---
 \RequirePackage[margin=2.5cm, headheight=40pt]{geometry}

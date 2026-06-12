@@ -1,21 +1,23 @@
-# System Design Document - Assignment 4
+# System Design Document - Advanced DSP/Comm Project
 
-## 1. LaTeX Architecture
-The project follows a modular LaTeX structure:
-- `main.tex`: Master file including headers and chapter inputs.
-- `hebrew-academic-template.cls`: Class file containing package imports and custom macros.
-- `chapters/`: Directory containing individual `.tex` files for each topic.
-- `references.bib`: BibLaTeX file in IEEE style.
+## 1. Document Architecture
+The document architecture is designed for high-fidelity technical typesetting:
+- `main.tex`: Root controller managing global settings and chapter ingestion.
+- `hebrew-academic-template.cls`: Custom class engine handling Excellence-tier aesthetics (banners, footers, and BiDi).
+- `chapters/`: Modularized technical components for granular versioning.
+- `references.bib`: Centralized BibLaTeX database (IEEE Standard).
 
-## 2. Template Macros (Custom Implementation)
-Based on lecture documentation, the following will be implemented:
-- `\en{text}`: LTR box for English snippets.
-- `\hebrewsection{title}`: Right-aligned section headers.
-- `\hebfoot`: BiDi footer management.
-- `fancytable`: Environment for RTL styled tables.
-- `pythonbox`: Minted/Listings wrapper for code blocks.
+## 2. Integrated Macros & Environments
+The system implements the following specialized macros for academic rigor:
+- `\en{text}`: BiDi-aware LTR wrapper for precise English technical terms.
+- `\hebrewsection{title}`: Compliant right-aligned headers for multilingual sections.
+- `\hebfoot`: Dynamic footer management supporting Excellence-tier visuals.
+- `fancytable`: Custom `tabularray` environment for high-resolution styled data.
+- `pythonbox`: Secure `tcolorbox` wrapper for production-ready Python code snippets.
 
-## 3. Content Strategy
-- **DSP Foundations:** Focus on LTI systems and Z-Transforms.
-- **Comm Foundations:** Focus on CPM and Coherent Demodulation.
-- **Math:** Use `amsmath` and `unicode-math` for high-quality typesetting.
+## 3. Comprehensive Content Strategy
+The document provides an exhaustive technical analysis across 18 specialized domains:
+- **Core Signal Processing:** LTI Stability, Z-Transform convergence, and Multi-rate architectures.
+- **Digital Communications:** CPM Phase Trellises, QAM constellations, and Carrier Synchronicity.
+- **Advanced Theoretical Bounds:** Shannon-Hartley Capacity and Cramér-Rao Lower Bounds.
+- **Modern Standards:** Deep-dive into 5G NR, Wi-Fi 6 (802.11ax), and ML-augmented Physical Layers.
