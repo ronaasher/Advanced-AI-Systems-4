@@ -1,0 +1,3271 @@
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 25.12) (format=lualatex 2026.6.11)  12 JUN 2026 17:26
+ restricted system commands enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/Idan/AppData/Local/MiKTeX/
+luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/fo
+ntloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/Idan/AppData/Local/MiKTeX/
+luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (./hebrew-academic-temp
+late.cls
+Document Class: hebrew-academic-template 2026/06/10 V7.3.0-2026-03-16 Academic 
+Template
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/Idan/AppData/Local/Mi
+KTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen147
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@readstream=\read2
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@ancientgreek=\language3
+\l@armenian=\language4
+\l@assamese=\language5
+\l@basque=\language6
+\l@belarusian=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@churchslavonic=\language12
+\l@classiclatin=\language13
+\l@coptic=\language14
+\l@croatian=\language15
+\l@czech=\language16
+\l@danish=\language17
+\l@dutch=\language18
+\l@esperanto=\language19
+\l@estonian=\language20
+\l@ethiopic=\language21
+\l@finnish=\language22
+\l@french=\language23
+\l@friulan=\language24
+\l@galician=\language25
+\l@georgian=\language26
+\l@german=\language27
+\l@greek=\language28
+\l@gujarati=\language29
+\l@hindi=\language30
+\l@hungarian=\language31
+\l@icelandic=\language32
+\l@indonesian=\language33
+\l@interlingua=\language34
+\l@irish=\language35
+\l@italian=\language36
+\l@kannada=\language37
+\l@kurmanji=\language38
+\l@latin=\language39
+\l@latvian=\language40
+\l@lithuanian=\language41
+\l@liturgicallatin=\language42
+\l@macedonian=\language43
+\l@malayalam=\language44
+\l@marathi=\language45
+\l@mongolian=\language46
+\l@mongolianlmc=\language47
+\l@monogreek=\language48
+\l@ngerman=\language49
+\l@nynorsk=\language50
+\l@occitan=\language51
+\l@oriya=\language52
+\l@pali=\language53
+\l@panjabi=\language54
+\l@piedmontese=\language55
+\l@polish=\language56
+\l@portuguese=\language57
+\l@romanian=\language58
+\l@romansh=\language59
+\l@russian=\language60
+\l@sanskrit=\language61
+\l@serbian=\language62
+\l@serbianc=\language63
+\l@slovak=\language64
+\l@slovenian=\language65
+\l@spanish=\language66
+\l@swedish=\language67
+\l@swissgerman=\language68
+\l@tamil=\language69
+\l@telugu=\language70
+\l@thai=\language71
+\l@turkish=\language72
+\l@turkmen=\language73
+\l@ukenglish=\language74
+\l@ukrainian=\language75
+\l@uppersorbian=\language76
+\l@usenglishmax=\language77
+\l@welsh=\language78
+\babelcatcodetablenum=\catcodetable14
+\bbl@pattcodes=\catcodetable15
+)
+\babel@savecnt=\count281
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen148
+\l@unhyphenated=\language79
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+)
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/en/babel-
+english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4320.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/babel-english/english.ld
+f
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language74). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language74). Reported on input line 108.
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse
+.sty (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-12-24 L3 programming layer (loader) 
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-luat
+ex.def
+File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count282
+Inserting `l3color' in `luaotfload.parse_color'.))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-luatex
+.sty
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+ (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg)))
+luaotfload | cache : Lookup cache loaded from C:/Users/Idan/AppData/Local/MiKTeX
+/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"name:Times
+(fontspec)             New
+(fontspec)             Roman:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman/B:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/B:mode=node;script=latn;language=dflt;+tlig;+smcp;
+"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"name:Times New
+(fontspec)             Roman/I:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/I:mode=node;script=latn;language=dflt;+tlig;+smcp;
+"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"name:Times
+(fontspec)             New
+(fontspec)             Roman/BI:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Times New
+(fontspec)             Roman/BI:mode=node;script=latn;language=dflt;+tlig;+smcp
+;"
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks18
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+) (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen162
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen163
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count297
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count298
+\leftroot@=\count299
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count300
+\DOTSCASE@=\count301
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen164
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count302
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count303
+\dotsspace@=\muskip17
+\c@parentequation=\count304
+\dspbrk@lvl=\count305
+\tag@help=\toks20
+\row@=\count306
+\column@=\count307
+\maxfields@=\count308
+\andhelp@=\toks21
+\eqnshift@=\dimen165
+\alignsep@=\dimen166
+\tagshift@=\dimen167
+\tagwidth@=\dimen168
+\totwidth@=\dimen169
+\lineht@=\dimen170
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-mat
+h.sty
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-mat
+h-luatex.sty
+Package: unicode-math-luatex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaL
+aTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/l3keys2e/l3ke
+ys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1)
+ on input line 49.
+LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) 
+on input line 52.
+LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) o
+n input line 55.
+LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) o
+n input line 56.
+LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding T
+S1) on input line 57.
+LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) o
+n input line 58.
+LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1
+) on input line 59.
+LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding
+ TS1) on input line 60.
+LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on
+ input line 61.
+LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) o
+n input line 62.
+LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) o
+n input line 63.
+LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) 
+on input line 64.
+LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS
+1) on input line 65.
+LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input lin
+e 66.
+LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on 
+input line 67.
+LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on inpu
+t line 68.
+LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) 
+on input line 69.
+LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encod
+ing TS1) on input line 70.
+LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (enco
+ding TS1) on input line 71.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encodin
+g TS1) on input line 72.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (enco
+ding TS1) on input line 73.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1)
+ on input line 74.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encod
+ing TS1) on input line 75.
+LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) o
+n input line 76.
+LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) 
+on input line 77.
+LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on in
+put line 78.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on i
+nput line 79.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1)
+ on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encodin
+g TS1) on input line 81.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) o
+n input line 92.
+LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding 
+TS1) on input line 93.
+LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1
+) on input line 94.
+LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1)
+ on input line 95.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1)
+ on input line 96.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS
+1) on input line 97.
+LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1
+) on input line 98.
+LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1
+) on input line 99.
+LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1)
+ on input line 100.
+LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS
+1) on input line 101.
+LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS
+1) on input line 102.
+LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1
+) on input line 103.
+LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on i
+nput line 104.
+LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on in
+put line 105.
+LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on i
+nput line 106.
+LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on inpu
+t line 107.
+LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) o
+n input line 108.
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on
+ input line 109.
+LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on inpu
+t line 115.
+LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) o
+n input line 116.
+LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) o
+n input line 117.
+LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on 
+input line 118.
+LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) o
+n input line 119.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) 
+on input line 120.
+LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on inp
+ut line 121.
+LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on
+ input line 122.
+LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on inp
+ut line 123.
+LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on inp
+ut line 124.
+LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on 
+input line 125.
+LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1)
+ on input line 126.
+LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on
+ input line 127.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS
+1) on input line 128.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) 
+on input line 129.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) 
+on input line 130.
+LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on
+ input line 131.
+LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on
+ input line 132.
+LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on i
+nput line 133.
+LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) o
+n input line 134.
+LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on i
+nput line 135.
+LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1)
+ on input line 136.
+LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on i
+nput line 137.
+LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on 
+input line 138.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding T
+S1) on input line 139.
+LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1
+) on input line 140.
+LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on i
+nput line 141.
+LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS
+1) on input line 142.
+LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on inpu
+t line 143.
+LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on in
+put line 144.
+LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on 
+input line 145.
+LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on inp
+ut line 146.
+LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on inp
+ut line 147.
+LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on i
+nput line 148.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1)
+ on input line 149.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding 
+TS1) on input line 150.
+LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on inp
+ut line 151.
+LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) o
+n input line 152.
+LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding T
+S1) on input line 153.
+LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on 
+input line 154.
+LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on inp
+ut line 155.
+LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on i
+nput line 156.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on
+ input line 157.
+LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) o
+n input line 158.
+LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) 
+on input line 159.
+LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1)
+ on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on i
+nput line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on i
+nput line 162.
+LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on inp
+ut line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on
+ input line 164.
+LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on
+ input line 165.
+LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on inpu
+t line 166.
+LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) o
+n input line 167.
+LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on 
+input line 168.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS
+1) on input line 169.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) o
+n input line 170.
+LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1)
+ on input line 171.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on
+ input line 172.
+LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on inp
+ut line 173.
+LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on
+ input line 174.
+LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) 
+on input line 175.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1)
+ on input line 176.
+LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on i
+nput line 177.
+LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input
+ line 178.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1)
+ on input line 179.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS
+1) on input line 180.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) 
+on input line 181.
+LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input
+ line 182.
+LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) o
+n input line 183.
+LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding T
+S1) on input line 184.
+LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS
+1) on input line 185.
+LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1)
+ on input line 186.
+LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1
+) on input line 187.
+LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on inp
+ut line 188.
+LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) 
+on input line 189.
+LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on 
+input line 190.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS
+1) on input line 191.
+LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on inp
+ut line 192.
+LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on in
+put line 193.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on inpu
+t line 194.
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/lualatex/lualatex-math/lualate
+x-math.sty
+Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
+h LuaLaTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+Lua module: lualatex-math 2013/08/03 v1.3 Patches for mathematics typesetting wi
+th LuaLaTeX)
+\g__um_fam_int=\count310
+\g__um_fonts_used_int=\count311
+\l__um_primecount_int=\count312
+\g__um_primekern_muskip=\muskip18
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-mat
+h-table.tex)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip54
+\f@nch@offset@elh=\skip55
+\f@nch@offset@erh=\skip56
+\f@nch@offset@olh=\skip57
+\f@nch@offset@orh=\skip58
+\f@nch@offset@elf=\skip59
+\f@nch@offset@erf=\skip60
+\f@nch@offset@olf=\skip61
+\f@nch@offset@orf=\skip62
+\f@nch@height=\skip63
+\f@nch@footalignment=\skip64
+\f@nch@widthL=\skip65
+\f@nch@widthC=\skip66
+\f@nch@widthR=\skip67
+\@temptokenb=\toks24
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.s
+ty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-
+common.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen171
+\pgfutil@tempdimb=\dimen172
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-
+latex.def
+\pgfutil@abb=\box55
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs.c
+ode.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.s
+ty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.s
+ty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.
+code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeysl
+ibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen173
+\pgf@y=\dimen174
+\pgf@xa=\dimen175
+\pgf@ya=\dimen176
+\pgf@xb=\dimen177
+\pgf@yb=\dimen178
+\pgf@xc=\dimen179
+\pgf@yc=\dimen180
+\pgf@xd=\dimen181
+\pgf@yd=\dimen182
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count313
+\c@pgf@countb=\count314
+\c@pgf@countc=\count315
+\c@pgf@countd=\count316
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count317
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.cf
+g
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+-luatex.def
+File: pgfsys-luatex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+softpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count318
+\pgfsyssoftpath@bigbuffer@items=\count319
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+protocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.
+tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil.c
+ode.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparser
+.code.tex
+\pgfmath@dimen=\dimen183
+\pgfmath@count=\count320
+\pgfmath@box=\box56
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.basic.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.trigonometric.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.random.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.comparison.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.base.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.round.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.misc.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.integerarithmetics.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc.c
+ode.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat.
+code.tex
+\c@pgfmathroundto@lastzeros=\count321
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.t
+ex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+points.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen184
+\pgf@picmaxx=\dimen185
+\pgf@picminy=\dimen186
+\pgf@picmaxy=\dimen187
+\pgf@pathminx=\dimen188
+\pgf@pathmaxx=\dimen189
+\pgf@pathminy=\dimen190
+\pgf@pathmaxy=\dimen191
+\pgf@xx=\dimen192
+\pgf@xy=\dimen193
+\pgf@yx=\dimen194
+\pgf@yy=\dimen195
+\pgf@zx=\dimen196
+\pgf@zy=\dimen197
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen198
+\pgf@path@lasty=\dimen199
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen256
+\pgf@shorten@start@additional=\dimen257
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+scopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count322
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+graphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen258
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+transformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen259
+\pgf@pt@y=\dimen260
+\pgf@pt@temp=\dimen261
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+quick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+objects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+arrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen262
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+shade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen263
+\pgf@sys@shading@range@num=\count323
+\pgf@shadingcount=\count324
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+image.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+external.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box60
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+layers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+transparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+patterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+rdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodules
+hapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box61
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulep
+lot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcom
+p-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen264
+\pgf@nodesepend=\dimen265
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcom
+p-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.sty
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.st
+y
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.
+code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.
+tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor.c
+ode.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen266
+\pgffor@skip=\dimen267
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibra
+ryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count325
+\pgfplotmarksize=\dimen268
+)
+\tikz@lastx=\dimen269
+\tikz@lasty=\dimen270
+\tikz@lastxsaved=\dimen271
+\tikz@lastysaved=\dimen272
+\tikz@lastmovetox=\dimen273
+\tikz@lastmovetoy=\dimen274
+\tikzleveldistance=\dimen275
+\tikzsiblingdistance=\dimen276
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count326
+\tikznumberofchildren=\count327
+\tikznumberofcurrentchild=\count328
+\tikz@fig@count=\count329
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulem
+atrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count330
+\pgfmatrixcurrentcolumn=\count331
+\pgf@matrix@numberofcolumns=\count332
+)
+\tikz@expandcount=\count333
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks37
+\verbatim@line=\toks38
+\verbatim@in@stream=\read4
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.st
+y
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box66
+\tcb@upperbox=\box67
+\tcb@lowerbox=\box68
+\tcb@phantombox=\box69
+\c@tcbbreakpart=\count334
+\c@tcblayer=\count335
+\c@tcolorbox@number=\count336
+\l__tcobox_tmpa_box=\box70
+\l__tcobox_tmpa_dim=\dimen277
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/tabularray/tabularray.st
+y
+Package: tabularray 2025-11-27 v2025C Typeset tabulars and arrays with LaTeX3
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/ninecolors/ninecolors.st
+y
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+)
+\g__tblr_nohyper_int=\count337
+\l__tblr_a_int=\count338
+\l__tblr_c_int=\count339
+\l__tblr_r_int=\count340
+\l__tblr_d_dim=\dimen278
+\l__tblr_h_dim=\dimen279
+\l__tblr_o_dim=\dimen280
+\l__tblr_p_dim=\dimen281
+\l__tblr_q_dim=\dimen282
+\l__tblr_r_dim=\dimen283
+\l__tblr_s_dim=\dimen284
+\l__tblr_t_dim=\dimen285
+\l__tblr_v_dim=\dimen286
+\l__tblr_w_dim=\dimen287
+\l__tblr_a_box=\box75
+\l__tblr_b_box=\box76
+\l__tblr_c_box=\box77
+\l__tblr_d_box=\box78
+\c@tblrcount=\count341
+\c@rownum=\count342
+\c@colnum=\count343
+\c@rowcount=\count344
+\c@colcount=\count345
+\abovesep=\dimen288
+\belowsep=\dimen289
+\leftsep=\dimen290
+\rightsep=\dimen291
+\gTblrLevelInt=\count346
+\g__tblr_data_row_key_count_int=\count347
+\g__tblr_data_column_key_count_int=\count348
+\g__tblr_data_cell_key_count_int=\count349
+\g__tblr_array_int=\count350
+\l__tblr_key_count_int=\count351
+\l__tblr_key_quotient_int=\count352
+\l__tblr_key_quotient_two_int=\count353
+\l__tblr_key_remainder_int=\count354
+\g__tblr_data_str_value_count_int=\count355
+\lTblrChildTotalInt=\count356
+\lTblrChildHtotalInt=\count357
+\lTblrChildVtotalInt=\count358
+\l__child_diff_h_int=\count359
+\l__child_diff_v_int=\count360
+\l__child_sign_h_int=\count361
+\l__child_sign_v_int=\count362
+\l__child_step_int=\count363
+\lTblrDefaultHruleWidthDim=\dimen292
+\lTblrDefaultVruleWidthDim=\dimen293
+\l__tblr_split_balance_int=\count364
+\l__tblr_strut_dp_dim=\dimen294
+\l__tblr_strut_ht_dim=\dimen295
+\g__tblr_cell_wd_dim=\dimen296
+\g__tblr_cell_ht_dim=\dimen297
+\g__tblr_cell_head_dim=\dimen298
+\g__tblr_cell_foot_dim=\dimen299
+\l__tblr_measured_cell_box=\box79
+\g__tblr_last_box=\box80
+\l__tblr_temp_box=\box81
+\l__tblr_column_target_dim=\dimen300
+\l__tblr_hfuzz_dim=\dimen301
+\l__tblr_caption_box=\box82
+\l__tblr_caption_left_box=\box83
+\lTblrRowHeadInt=\count365
+\lTblrRowFootInt=\count366
+\l__tblr_row_head_box=\box84
+\l__tblr_row_foot_box=\box85
+\l__tblr_row_head_foot_dim=\dimen302
+\lTblrTableWidthDim=\dimen303
+\l__tblr_table_firsthead_box=\box86
+\l__tblr_table_middlehead_box=\box87
+\l__tblr_table_lasthead_box=\box88
+\l__tblr_table_firstfoot_box=\box89
+\l__tblr_table_middlefoot_box=\box90
+\l__tblr_table_lastfoot_box=\box91
+\l__tblr_remain_height_dim=\dimen304
+\l__tblr_next_rows_dim=\dimen305
+\l__tblr_page_overfill_dim=\dimen306
+\l__tblr_long_from_int=\count367
+\l__tblr_long_to_int=\count368
+\l__tblr_curr_i_int=\count369
+\l__tblr_prev_i_int=\count370
+\lTblrTablePageInt=\count371
+\l__tblr_table_head_box=\box92
+\l__tblr_table_foot_box=\box93
+\l__tblr_table_head_foot_dim=\dimen307
+\l__tblr_table_head_body_foot_dim=\dimen308
+\l__tblr_table_box=\box94
+\lTblrRowFirstInt=\count372
+\lTblrRowLastInt=\count373
+\l__tblr_cover_box_a_dim=\dimen309
+\l__tblr_cover_box_b_dim=\dimen310
+\l__tblr_table_hlines_box=\box95
+\l__tblr_hline_box=\box96
+\l__tblr_row_box=\box97
+\l__tblr_col_o_wd_dim=\dimen311
+\l__tblr_col_b_wd_dim=\dimen312
+\l__tblr_hline_leftskip_dim=\dimen313
+\l__tblr_hline_rightskip_dim=\dimen314
+\l__tblr_row_ht_dim=\dimen315
+\l__tblr_row_dp_dim=\dimen316
+\l__tblr_row_abovesep_dim=\dimen317
+\l__tblr_row_belowsep_dim=\dimen318
+\l__tblr_row_vlines_box=\box98
+\l__tblr_vline_box=\box99
+\l__tblr_cell_box=\box100
+\l__tblr_row_upper_dim=\dimen319
+\l__tblr_row_lower_dim=\dimen320
+\l__tblr_row_vpace_dim=\dimen321
+\l__tblr_vline_aboveskip_dim=\dimen322
+\l__tblr_vline_belowskip_dim=\dimen323
+\lTblrCellRowSpanInt=\count374
+\lTblrCellColSpanInt=\count375
+\l__tblr_cell_wd_dim=\dimen324
+\l__tblr_cell_ht_dim=\dimen325
+\lTblrCellAboveBorderWidthDim=\dimen326
+\lTblrCellBelowBorderWidthDim=\dimen327
+\lTblrCellLeftBorderWidthDim=\dimen328
+\lTblrCellRightBorderWidthDim=\dimen329
+\l__tblr_diag_box=\box101
+\l__tblr_cell_inner_wd_dim=\dimen330
+\l__tblr_cell_inner_dp_dim=\dimen331
+\l__tblr_cell_hanchor_dim=\dimen332
+\l__tblr_last_cell_table_ht_dim=\dimen333
+\l__tblr_last_cell_table_dp_dim=\dimen334
+\l__tblr_last_vline_wd_dim=\dimen335
+\l__tblr_tikz_node_box=\box102
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefinek
+eys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.st
+y
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.
+sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.st
+y
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettitl
+estring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count376
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.st
+y
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen336
+\Hy@linkcounter=\count377
+\Hy@pagecounter=\count378
+ (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count379
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count380
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen337
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.
+sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count381
+\Field@Width=\dimen338
+\Fld@charsize=\dimen339
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count382
+\c@Item=\count383
+\c@Hfootnote=\count384
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2025-07-12 v7.01o Hyperref driver for luaTeX
+\Fld@listcount=\count385
+\c@bookmark@seq@number=\count386
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfile
+check.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniqueco
+unter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip68
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/pgfplots/pgfplots.sty
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.revi
+sion.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.code
+.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotscore.
+code.tex
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
+\pgfplots@luabackend@table=\catcodetable16
+\t@pgfplots@toka=\toks40
+\t@pgfplots@tokb=\toks41
+\t@pgfplots@tokc=\toks42
+\pgfplots@tmpa=\dimen340
+\c@pgfplots@coordindex=\count387
+\c@pgfplots@scanlineindex=\count388
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgfplotss
+ysgeneric.code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgfplots
+library.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/oldpgfcompati
+b/pgfplotsoldpgfsupp_loader.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibra
+ryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/oldpgfcompati
+b/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/luamath/
+pgflibraryluamath.code.tex)
+Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.1
+1a is up-to-date
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+util.code.tex
+Package pgfplots info on input line 82: Found new luatex: initializing lua comm
+ands instead of write18 (shell-escape)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure
+/pgfplotsliststructure.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure
+/pgfplotsliststructureext.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure
+/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count389
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure
+/pgfplotsmatrix.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/numtable/pgfp
+lotstableshared.code.tex
+\c@pgfplotstable@counta=\count390
+\t@pgfplotstable@a=\toks46
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure
+/pgfplotsdeque.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+binary.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+binary.data.code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+util.verb.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgflibra
+rypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count391
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgflibrar
+ypgfplots.surfshading.pgfsys-luatex.def)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+colormap.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/util/pgfplots
+color.code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsstack
+edplots.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsploth
+andlers.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsmeshp
+lothandler.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsmeshp
+lotimage.code.tex)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.scal
+ing.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotscoord
+processing.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.erro
+rbars.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.mark
+ers.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplotsticks
+.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/pgfplots.path
+s.code.tex)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibrarydecorations.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmoduled
+ecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen341
+\pgfdecoratedremainingdistance=\dimen342
+\pgfdecoratedinputsegmentcompleteddistance=\dimen343
+\pgfdecoratedinputsegmentremainingdistance=\dimen344
+\pgf@decorate@distancetomove=\dimen345
+\pgf@decorate@repeatstate=\count392
+\pgfdecorationsegmentamplitude=\dimen346
+\pgfdecorationsegmentlength=\dimen347
+)
+\tikz@lib@dec@box=\box103
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/decorati
+ons/pgflibrarydecorations.pathmorphing.code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/decorati
+ons/pgflibrarydecorations.pathreplacing.code.tex))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/tikzlibr
+arypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count393
+\pgfplots@xmin@reg=\dimen348
+\pgfplots@xmax@reg=\dimen349
+\pgfplots@ymin@reg=\dimen350
+\pgfplots@ymax@reg=\dimen351
+\pgfplots@zmin@reg=\dimen352
+\pgfplots@zmax@reg=\dimen353
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibra
+ryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count394
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count395
+\c@listtotal=\count396
+\c@listcount=\count397
+\c@liststart=\count398
+\c@liststop=\count399
+\c@citecount=\count400
+\c@citetotal=\count401
+\c@multicitecount=\count402
+\c@multicitetotal=\count403
+\c@instcount=\count404
+\c@maxnames=\count405
+\c@minnames=\count406
+\c@maxitems=\count407
+\c@minitems=\count408
+\c@citecounter=\count409
+\c@maxcitecounter=\count410
+\c@savedcitecounter=\count411
+\c@uniquelist=\count412
+\c@uniquename=\count413
+\c@refsection=\count414
+\c@refsegment=\count415
+\c@maxextratitle=\count416
+\c@maxextratitleyear=\count417
+\c@maxextraname=\count418
+\c@maxextradate=\count419
+\c@maxextraalpha=\count420
+\c@abbrvpenalty=\count421
+\c@highnamepenalty=\count422
+\c@lownamepenalty=\count423
+\c@maxparens=\count424
+\c@parenlevel=\count425
+\blx@tempcnta=\count426
+\blx@tempcntb=\count427
+\blx@tempcntc=\count428
+\c@blx@maxsection=\count429
+\blx@maxsegment@0=\count430
+\blx@notetype=\count431
+\blx@parenlevel@text=\count432
+\blx@parenlevel@foot=\count433
+\blx@sectionciteorder@0=\count434
+\blx@sectionciteorderinternal@0=\count435
+\blx@entrysetcounter=\count436
+\blx@biblioinstance=\count437
+\labelnumberwidth=\skip69
+\labelalphawidth=\skip70
+\biblabelsep=\skip71
+\bibitemsep=\skip72
+\bibnamesep=\skip73
+\bibinitsep=\skip74
+\bibparsep=\skip75
+\bibhang=\skip76
+\blx@bcfin=\read5
+\blx@bcfout=\write4
+\blx@langwohyphens=\language80
+\c@mincomprange=\count438
+\c@maxcomprange=\count439
+\c@mincompwidth=\count440
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count441
+\c@savedafterword=\count442
+\c@annotator=\count443
+\c@savedannotator=\count444
+\c@author=\count445
+\c@savedauthor=\count446
+\c@bookauthor=\count447
+\c@savedbookauthor=\count448
+\c@commentator=\count449
+\c@savedcommentator=\count450
+\c@editor=\count451
+\c@savededitor=\count452
+\c@editora=\count453
+\c@savededitora=\count454
+\c@editorb=\count455
+\c@savededitorb=\count456
+\c@editorc=\count457
+\c@savededitorc=\count458
+\c@foreword=\count459
+\c@savedforeword=\count460
+\c@holder=\count461
+\c@savedholder=\count462
+\c@introduction=\count463
+\c@savedintroduction=\count464
+\c@namea=\count465
+\c@savednamea=\count466
+\c@nameb=\count467
+\c@savednameb=\count468
+\c@namec=\count469
+\c@savednamec=\count470
+\c@translator=\count471
+\c@savedtranslator=\count472
+\c@shortauthor=\count473
+\c@savedshortauthor=\count474
+\c@shorteditor=\count475
+\c@savedshorteditor=\count476
+\c@labelname=\count477
+\c@savedlabelname=\count478
+\c@institution=\count479
+\c@savedinstitution=\count480
+\c@lista=\count481
+\c@savedlista=\count482
+\c@listb=\count483
+\c@savedlistb=\count484
+\c@listc=\count485
+\c@savedlistc=\count486
+\c@listd=\count487
+\c@savedlistd=\count488
+\c@liste=\count489
+\c@savedliste=\count490
+\c@listf=\count491
+\c@savedlistf=\count492
+\c@location=\count493
+\c@savedlocation=\count494
+\c@organization=\count495
+\c@savedorganization=\count496
+\c@origlocation=\count497
+\c@savedoriglocation=\count498
+\c@origpublisher=\count499
+\c@savedorigpublisher=\count500
+\c@publisher=\count501
+\c@savedpublisher=\count502
+\c@language=\count503
+\c@savedlanguage=\count504
+\c@origlanguage=\count505
+\c@savedoriglanguage=\count506
+\c@pageref=\count507
+\c@savedpageref=\count508
+\shorthandwidth=\skip77
+\shortjournalwidth=\skip78
+\shortserieswidth=\skip79
+\shorttitlewidth=\skip80
+\shortauthorwidth=\skip81
+\shorteditorwidth=\skip82
+\locallabelnumberwidth=\skip83
+\locallabelalphawidth=\skip84
+\localshorthandwidth=\skip85
+\localshortjournalwidth=\skip86
+\localshortserieswidth=\skip87
+\localshorttitlewidth=\skip88
+\localshortauthorwidth=\skip89
+\localshorteditorwidth=\skip90
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-unicode.def
+)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count509
+\c@textcitetotal=\count510
+\c@textcitemaxnames=\count511
+\c@biburlbigbreakpenalty=\count512
+\c@biburlbreakpenalty=\count513
+\c@biburlnumpenalty=\count514
+\c@biburlucpenalty=\count515
+\c@biburllcpenalty=\count516
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count517
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2025-08-01 v1.4f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/numeric-com
+p.bbx
+File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.bb
+x
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count518
+\c@bbx:relatedtotal=\count519
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2025-08-01 v1.4f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-verb'...
+Package biblatex Info: ... file 'numeric-verb.cbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/numeric-ver
+b.cbx
+File: numeric-verb.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-12-24 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-case-expl3.
+sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count520
+\@quotereset=\count521
+(./main.aux)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-66.1381pt
+* \headheight=40.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count522
+\scratchdimen=\dimen354
+\scratchbox=\box104
+\nofMPsegments=\count523
+\nofMParguments=\count524
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count525
+\MPscratchDim=\dimen355
+\MPnumerator=\count526
+\makeMPintoPDFobject=\count527
+\everyMPtoPDFconversion=\toks48
+)
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-ba
+se.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cf
+g
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 7
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+7.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 7.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 7.
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-mat
+h.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern
+-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[latinmodern-math.otf]:mode=base;script=math;lan
+guage=dflt;mathfontdimen=xetex;"<7.2-10.2>"[latinmodern-math.otf]:mode=base;scr
+ipt=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-7.2>"[latinmodern-math.ot
+f]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;"
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 7.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 7.
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern
+-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.otf},Raw
+Feature={mathfontdimen=tex2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[latinmodern-math.otf]:mode=base;script=math;lan
+guage=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<7.2-10.2>"[latinmodern-math
+.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex
+2;+ssty=0;"<-7.2>"[latinmodern-math.otf]:mode=base;script=math;language=dflt;ma
+thfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 7.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 7.
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
+sFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern
+-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-math.otf},Raw
+Feature={mathfontdimen=tex3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[latinmodern-math.otf]:mode=base;script=math;lan
+guage=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<7.2-10.2>"[latinmodern-math
+.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex
+3;+ssty=0;"<-7.2>"[latinmodern-math.otf]:mode=base;script=math;language=dflt;ma
+thfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
+e=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 7
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 7.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 7.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+ (C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package hyperref Info: Link coloring OFF on input line 7.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+
+\openout5 = main.out
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:/Users/Idan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+\openout4 = main.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+ (./main.toc [1
+
+{C:/Users/Idan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4] [
+5] [6])
+\tf@toc=\write6
+
+\openout6 = main.toc
+ (./main.lof)
+\tf@lof=\write7
+
+\openout7 = main.lof
+ (./main.lot)
+\tf@lot=\write8
+
+\openout8 = main.lot
+ [7]
+(./chapters/01_dsp_foundations.tex
+Overfull \hbox (4.37386pt too wide) in paragraph at lines 15--17
+\TU/TimesNewRoman(0)/m/n/12 Sam-pling dis-cretizes time; quan-ti-za-tion dis-cre
+tizes am-pli-tude. A $\TU/latinmodern-math.otf(1)/m/n/12 𝐵$\TU/TimesNewRoman
+(0)/m/n/12 -bit quan-tizer maps an infinite-
+ []
+
+[8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 120--129
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--129
+\TU/lmtt/m/n/12 parameters for lti_systems N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--129
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--156
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--156
+\TU/lmtt/m/n/12 parameters for z-transform N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--156
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 174--183
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--183
+\TU/lmtt/m/n/12 Initialize parameters for difference_equations N = 1024 data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--183
+\TU/lmtt/m/n/12 = np.random.randn(N) + 1j * np.random.randn(N) signal_power =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--183
+\TU/lmtt/m/n/12 np.var(data) noise = np.random.normal(0, 0.1, N) processed_signa
+l
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 201--210
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--210
+\TU/lmtt/m/n/12 parameters for nyquist N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--210
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [13] (./chapters/02_spectral_analysis.tex [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 101--110
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--110
+\TU/lmtt/m/n/12 parameters for discrete_fourier_transform N = 1024 data =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--110
+\TU/lmtt/m/n/12 np.random.randn(N) + 1j * np.random.randn(N) signal_power =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--110
+\TU/lmtt/m/n/12 np.var(data) noise = np.random.normal(0, 0.1, N) processed_signa
+l
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 128--137
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--137
+\TU/lmtt/m/n/12 parameters for windowing N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--137
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--164
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--164
+\TU/lmtt/m/n/12 parameters for leakage N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--164
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 182--191
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--191
+\TU/lmtt/m/n/12 parameters for fft N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--191
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [18] (./chapters/02b_filter_design.tex [19] [20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 parameters for fir_filters N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 parameters for iir_filters N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+\TU/lmtt/m/n/12 parameters for parks-mcclellan_algorithm N = 1024 data =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+\TU/lmtt/m/n/12 np.random.randn(N) + 1j * np.random.randn(N) signal_power =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+\TU/lmtt/m/n/12 np.var(data) noise = np.random.normal(0, 0.1, N) processed_signa
+l
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 208--217
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--217
+\TU/lmtt/m/n/12 parameters for butterworth N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--217
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [24] (./chapters/03_digital_comm.tex [25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+\TU/lmtt/m/n/12 parameters for modulation N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 parameters for constellations N = 1024 data = np.random.randn(N)
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 parameters for bit_error_rate N = 1024 data = np.random.randn(N)
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+\TU/lmtt/m/n/12 parameters for signal_space N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--190
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [29] (./chapters/03b_trellis_modulation.tex [30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 90--99
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--99
+\TU/lmtt/m/n/12 parameters for tcm N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--99
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--126
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--126
+\TU/lmtt/m/n/12 parameters for set_partitioning N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--126
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 144--153
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--153
+\TU/lmtt/m/n/12 parameters for viterbi_decoding N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--153
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+\TU/lmtt/m/n/12 parameters for coding_gain N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[33]) [34] (./chapters/04_demodulation.tex [35]
+Package pgfplots info on input line 62: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 95--104
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--104
+\TU/lmtt/m/n/12 Initialize parameters for coherent_demodulation N = 1024 data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--104
+\TU/lmtt/m/n/12 = np.random.randn(N) + 1j * np.random.randn(N) signal_power =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--104
+\TU/lmtt/m/n/12 np.var(data) noise = np.random.normal(0, 0.1, N) processed_signa
+l
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--131
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--131
+\TU/lmtt/m/n/12 parameters for carrier_recovery N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--131
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 149--158
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--158
+\TU/lmtt/m/n/12 parameters for matched_filter N = 1024 data = np.random.randn(N)
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--158
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--185
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--185
+\TU/lmtt/m/n/12 parameters for pll N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--185
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[38]) [39] (./chapters/05_advanced_topics.tex
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]    \TU/lmtt/m/n/12 ofdm_symbol = np.concatenate([time_domain[-
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+\TU/lmtt/m/n/12 parameters for ofdm N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+\TU/lmtt/m/n/12 parameters for synchronization N = 1024 data = np.random.randn(N
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 118--127
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--127
+\TU/lmtt/m/n/12 parameters for peak-to-average_power_ratio N = 1024 data =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--127
+\TU/lmtt/m/n/12 np.random.randn(N) + 1j * np.random.randn(N) signal_power =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--127
+\TU/lmtt/m/n/12 np.var(data) noise = np.random.normal(0, 0.1, N) processed_signa
+l
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--154
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--154
+\TU/lmtt/m/n/12 parameters for cyclic_prefix N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--154
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [43] (./chapters/06_case_studies.tex
+Overfull \hbox (1.9079pt too wide) in paragraph at lines 13--14
+\TU/TimesNewRoman(0)/m/n/12 of each sub-chan-nel. This al-lows DSL to max-i-mize
+ the data rate even in the pres-ence of frequency-
+ []
+
+
+Overfull \hbox (14.60957pt too wide) in paragraph at lines 27--27
+[]\TU/TimesNewRoman(0)/b/n/14.4 Prac-ti-cal Im-ple-men-ta-tion: FPGA-based Dig-i
+-tal Down-Converter (DDC) 
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 71--80
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--80
+\TU/lmtt/m/n/12 parameters for adsl N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--80
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
+\TU/lmtt/m/n/12 parameters for vdsl N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 125--134
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--134
+\TU/lmtt/m/n/12 parameters for cable_modems N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--134
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+\TU/lmtt/m/n/12 parameters for docsis N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[47]) [48] (./chapters/08_radar_dsp.tex [49]
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
+\TU/lmtt/m/n/12 parameters for chirp_signals N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+\TU/lmtt/m/n/12 parameters for pulse_compression N = 1024 data = np.random.randn
+(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 108--117
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 108--117
+\TU/lmtt/m/n/12 parameters for doppler_processing N = 1024 data = np.random.rand
+n(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--117
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+\TU/lmtt/m/n/12 parameters for cfar N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [52] (./chapters/09_info_theory.tex [53]
+NOTE: coordinate (--,--,--) [--](was (0.0,-nan(ind),--) [--]) has been dropped b
+ecause of a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (1.0,-nan(ind),--) [--]) has been dropped b
+ecause of a coordinate filter.
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+\TU/lmtt/m/n/12 parameters for entropy N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--90
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--117
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 108--117
+\TU/lmtt/m/n/12 parameters for mutual_information N = 1024 data = np.random.rand
+n(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--117
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+\TU/lmtt/m/n/12 parameters for channel_capacity N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--144
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--171
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--171
+\TU/lmtt/m/n/12 parameters for source_coding N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--171
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[56]) [57] (./chapters/10_channel_coding.tex [58]
+Package pgfplots info on input line 51: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 75--84
+\TU/lmtt/m/n/12 parameters for linear_block_codes N = 1024 data = np.random.rand
+n(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 102--111
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--111
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+\TU/lmtt/m/n/12 parameters for ldpc N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--165
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--165
+\TU/lmtt/m/n/12 parameters for turbo_codes N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--165
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[61]) [62] (./chapters/11_wireless_fading.tex
+Overfull \hbox (1.81819pt too wide) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/12 When there is no line-of-sight (LOS) com-po-nent, th
+e re-ceived sig-nal en-ve-lope fol-lows a Rayleigh
+ []
+
+
+Overfull \hbox (2.14015pt too wide) in paragraph at lines 17--18
+[]\TU/TimesNewRoman(0)/b/n/12 Doppler Spread: \TU/TimesNewRoman(0)/m/n/12 Caused
+ by mo-bil-ity, lead-ing to fre-quency shifts. It causes \TU/TimesNewRoman(0)/b
+/n/12 time-selective
+ []
+
+Package pgfplots info on input line 49: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 73--82
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--82
+\TU/lmtt/m/n/12 parameters for multipath N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--82
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+\TU/lmtt/m/n/12 parameters for rayleigh_fading N = 1024 data = np.random.randn(N
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 parameters for mimo N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 parameters for doppler_spread N = 1024 data = np.random.randn(N)
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--163
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [66] (./chapters/12_adaptive_filtering.tex [67]
+Underfull \hbox (badness 10000) in paragraph at lines 69--78
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--78
+\TU/lmtt/m/n/12 parameters for lms_algorithm N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--78
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 96--105
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--105
+\TU/lmtt/m/n/12 parameters for rls_algorithm N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--105
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+\TU/lmtt/m/n/12 parameters for echo_cancellation N = 1024 data = np.random.randn
+(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--159
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--159
+\TU/lmtt/m/n/12 parameters for equalization N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--159
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[70]) [71] (./chapters/13_modern_standards.tex [72]
+Underfull \hbox (badness 10000) in paragraph at lines 58--67
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--67
+\TU/lmtt/m/n/12 parameters for 5g_nr N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--67
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+\TU/lmtt/m/n/12 parameters for wi-fi_6 N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
+\TU/lmtt/m/n/12 parameters for lte N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+\TU/lmtt/m/n/12 parameters for massive_mimo N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [75] (./chapters/15_image_processing.tex
+Overfull \hbox (1.20491pt too wide) in paragraph at lines 29--30
+[]\TU/TimesNewRoman(0)/b/n/12 Lossy (e.g., JPEG): \TU/TimesNewRoman(0)/m/n/12 Us
+es the Dis-crete Co-sine Trans-form (DCT) to re-move high-frequency
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
+\TU/lmtt/m/n/12 parameters for 2d_filtering N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+\TU/lmtt/m/n/12 parameters for edge_detection N = 1024 data = np.random.randn(N)
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--124
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--124
+\TU/lmtt/m/n/12 parameters for jpeg_compression N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--124
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 142--151
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--151
+\TU/lmtt/m/n/12 parameters for dct N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--151
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [79] (./chapters/16_audio_speech.tex [80]
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+\TU/lmtt/m/n/12 parameters for speech_synthesis N = 1024 data = np.random.randn(
+N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+\TU/lmtt/m/n/12 parameters for lpc_analysis N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+\TU/lmtt/m/n/12 parameters for psychoacoustics N = 1024 data = np.random.randn(N
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+\TU/lmtt/m/n/12 parameters for mp3 N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [83] (./chapters/17_ml_dsp.tex [84]
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+\TU/lmtt/m/n/12 parameters for deep_learning N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+\TU/lmtt/m/n/12 parameters for autoencoders N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--93
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+\TU/lmtt/m/n/12 parameters for cnn_for_signals N = 1024 data = np.random.randn(N
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--120
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+\TU/lmtt/m/n/12 parameters for rnn N = 1024 data = np.random.randn(N) + 1j
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+\TU/lmtt/m/n/12 * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+) [87] (./chapters/18_ethical_social.tex [88]
+Underfull \hbox (badness 10000) in paragraph at lines 32--41
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--41
+\TU/lmtt/m/n/12 parameters for privacy N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--41
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--68
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 59--68
+\TU/lmtt/m/n/12 parameters for bias_in_algorithms N = 1024 data = np.random.rand
+n(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--68
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
+\TU/lmtt/m/n/12 parameters for deepfakes N = 1024 data = np.random.randn(N) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--95
+\TU/lmtt/m/n/12 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--122
+[]\TU/lmtt/m/n/12 import numpy as np import matplotlib.pyplot as plt  # Initiali
+ze
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--122
+\TU/lmtt/m/n/12 parameters for surveillance N = 1024 data = np.random.randn(N)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--122
+\TU/lmtt/m/n/12 + 1j * np.random.randn(N) signal_power = np.var(data) noise =
+ []
+
+[90]) [91] (./chapters/07_appendices.tex) [92]
+
+LaTeX Warning: Empty bibliography on input line 72.
+
+(./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C25FEEA816539EF633FAC3CB36A40E2A;55944.
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 52877 strings out of 476081
+ 125121,2373549 words of node,token memory allocated
+ 1923 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 459 attribute, 68 glue_spe
+c, 231 attribute_list, 2 write nodes
+   avail lists: 1:1,2:4601,3:2019,4:207,5:536,6:153,7:6624,8:69,9:1274,10:11,11:
+606
+ 73712 multiletter control sequences out of 65536+600000
+ 78 fonts using 34302131 bytes
+ 113i,17n,117p,725b,2159s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/WINDOWS/Fonts/timesi.ttf><C:/Users/Idan/AppData/Local/Programs/MiKTeX/fonts/
+opentype/public/lm-math/latinmodern-math.otf><c:/users/idan/appdata/local/progra
+ms/miktex/fonts/opentype/public/lm/lmmono12-regular.otf><C:/Users/Idan/AppData/L
+ocal/Programs/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf><C:/User
+s/Idan/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm-math/latinmodern-m
+ath.otf><C:/WINDOWS/Fonts/timesbd.ttf><C:/WINDOWS/Fonts/times.ttf>
+Output written on main.pdf (92 pages, 668225 bytes).
+
+PDF statistics: 1904 PDF objects out of 2073 (max. 8388607)
+ 488 named destinations out of 1000 (max. 1048576)
+ 2112 words of extra memory for PDF output out of 10000 (max. 100000000)
+

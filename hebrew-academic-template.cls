@@ -9,7 +9,7 @@
 \setmainfont{Times New Roman}
 
 % --- Layout & Graphics ---
-\RequirePackage[margin=2.5cm]{geometry}
+\RequirePackage[margin=2.5cm, headheight=40pt]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage{amsmath,amssymb,unicode-math}
@@ -20,8 +20,25 @@
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\RequirePackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{references.bib}
 
-% --- Custom Macros (Adapted for English) ---
+% --- Excellence: Banner & Footer ---
+\definecolor{bannerblue}{RGB}{0, 51, 102}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west, fill=bannerblue, minimum width=\paperwidth, minimum height=1cm, text=white, font=\bfseries\Large] at (current page.north west) {\hspace{2.5cm} Advanced AI Systems - Assignment 04};
+  \end{tikzpicture}
+}
+\fancyfoot[L]{Advanced AI Systems - Assignment 04}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+
+% --- Custom Macros (Adapted for English/Hebrew) ---
 
 % \en{text} - Simple wrapper for consistency
 \newcommand{\en}[1]{#1}
